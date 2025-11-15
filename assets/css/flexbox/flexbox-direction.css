@@ -1,3 +1,15 @@
+:root{
+--section-background-color: #fff;
+--section-border-color: #b26e6e;
+--item-background-color: #44177a;
+--item-color: #e9e1e1;
+--flex-conteiner-border-color:#4092f1;
+--flex-conteiner-background-color:#efeef5;
+--description-color:#080505;
+
+
+}
+
 *{
     box-sizing: content-box;
 }
@@ -12,8 +24,8 @@ h1{
     margin-bottom: 30px;
 }
 div.section{
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--section-background-color);
+    border: 1px solid var(--section-border-color);
     border-radius: 8px;
     padding:16px;
     margin-bottom: 20px;
@@ -24,12 +36,12 @@ div.section{
 }
 .descricao{
     font-size: 14px;
-    color:#555;
+    color:var(--description-color);
     margin-bottom: 12px;
 }
 .item{
-    background-color: #8b45e0;
-    color: #fff;
+    background-color: var(--flex-conteiner-border-color);
+    color: var(--item-color);
     padding: 10px;
     margin: 4px;
     border-radius: 4px;
@@ -37,10 +49,10 @@ div.section{
 }
 .flex-container{
     display: flex;
-    border: 1px dashed #999;
+    border: 1px dashed var(--flex-conteiner-border-color);
     padding: 10px;
     min-height: 80px;
-    background-color: #fafafa;
+    background-color: var(--flex-conteiner-background-color);
 }
 .exemplo1{
     flex-direction: row;
@@ -51,6 +63,7 @@ div.section{
 }
 .exemplo3{
     flex-direction: row-reverse;
+    gap: 30px;
 }
 .exemplo4{
     flex-direction: column-reverse;
@@ -61,8 +74,10 @@ div.section{
 .justify-content-flex-end{
     justify-content: end;
 }
-.justify-content-flex-center{
+.justify-content-center{
     justify-content: center;
+    gap:40px;
+ 
 }
 .justify-content-space-around{
     justify-content: space-around;
