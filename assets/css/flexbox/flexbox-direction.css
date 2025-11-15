@@ -76,3 +76,35 @@ div.section{
 .mb2-2{
     margin-bottom: 8px;
 }
+.flex-altura{
+    min-height: 120px;
+}
+.align-items-flex-start{
+    align-items: flex-start;
+}
+.item-baixo{
+    font-size: 12px;
+    padding-top: 20px;
+    padding: 5px;
+}
+.item-medio{
+    font-size: 16px;
+    padding: 10px;
+}
+.item.alto{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.align-items-flex-end{
+    align-items: end;
+}
+.align.itens-center{
+    align-items: center;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+.align-items-baseline{
+    align-items: baseline;
+}
